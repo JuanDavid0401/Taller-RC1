@@ -49,3 +49,13 @@ int main() {
         printf("Estudiante %d -> Promedio: %.2f | Max: %.2f | Min: %.2f\n", 
                i + 1, suma_est / 3.0, max_est, min_est);
     }
+    
+    printf(" \n RESULTADOS POR ASIGNATURA \n");
+    
+    for(int j = 0; j < 3; j++) {
+        float suma_asig = 0;
+        
+        float max_asig = notas[0][j]; 
+        float min_asig = notas[0][j];
+        int aprobados = 0;
+        int reprobados = 0;
