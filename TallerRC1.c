@@ -59,3 +59,18 @@ int main() {
         float min_asig = notas[0][j];
         int aprobados = 0;
         int reprobados = 0;
+
+        for(int i = 0; i < n; i++) {
+            suma_asig += notas[i][j];
+            
+            if(notas[i][j] > max_asig) max_asig = notas[i][j];
+            if(notas[i][j] < min_asig) min_asig = notas[i][j];
+            
+        
+            if(notas[i][j] >= 6.0) {
+                aprobados++;
+            } else {
+                reprobados++;
+            }
+        }
+        
