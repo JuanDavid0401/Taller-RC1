@@ -73,4 +73,12 @@ int main() {
                 reprobados++;
             }
         }
-        
+
+        printf("\n--- Asignatura %d ---\n", j + 1);
+        printf("Promedio del curso: %.2f\n", suma_asig / n);
+        printf("Nota Max: %.2f | Nota Min: %.2f\n", max_asig, min_asig);
+        printf("Aprobados: %d | Reprobados: %d\n", aprobados, reprobados);
+    }
+    
+    return 0;
+}
